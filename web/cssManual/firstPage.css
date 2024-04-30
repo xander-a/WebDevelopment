@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans seriff;
+    box-sizing: border-box;
+}
+
+
+#idPicture{
+    margin-left: 0px;
+}
+
+#body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.custom-navbar {
+    background-color: black;
+
+}
+
+#logoImage {
+    width: auto; /* Adjust the width as needed */
+    height: 40px; /* Maintain aspect ratio */
+   margin-bottom: 7px;
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh; /* Adjust the height to accommodate the navbar height */
+    background-image: url(../imgs/1x1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+
+.header-text{
+    margin-top: 17%;
+    font-size: 30px;
+    color: #fff;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text span{
+    color: blue;
+}
+
+
+.navbar-nav{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 30px;
+    margin-top: 0;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: blue;
+}
+
+
+
+#aboutMe{
+    padding: 50px 0;
+    color: white;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+#imageAbout{
+    width: 90%;
+    height: auto;
+}
+
+.about-col-1 {
+    flex-basis: 40%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+
+}
+
+.aboutText{
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.tab-title{
+    margin: 20px 0 25px;
+    display: flex;
+}
+
+.tab-links{
+    margin-right: 100px;
+    font-size: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: right;
+}
+
+.tab-title .tab-link:hover {
+    color: blue;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px -30px 25px;
+}
+
+.tab-contents ul li span{
+    color: blue;
+    position: flex;
+}
+
+#aboutMe p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.tab-links {
+    display: inline-block;
+    position: relative; /* Ensure pseudo-elements are positioned correctly */
+    cursor: pointer; /* Optional: Indicates clickable tab */
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -8px; /* Adjust as needed to get the desired spacing from text */
+    transition: width 0.3s ease-in-out; /* Transition to animate the underline */
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+
+/*CONTACTS*/
+
+#contacts{
+    padding: 120px 0;
+    color: white;
+    text-align: center;
+}
+
+.icon{
+    width: 250px;
+    height: 250px;
+    margin: 0 5px;
+    color: inherit;
+}
+
+.containerContacts{
+    max-width: 1000px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.containerContacts row{
+    margin: 0;
+}
+
+.containerContacts col{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
